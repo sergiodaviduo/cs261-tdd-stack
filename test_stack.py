@@ -26,14 +26,14 @@ class TestStack(unittest.TestCase):
 
     # def test_initial_pop(self):
     #     """
-    #     Popping from an empty stack raises IndexError
+    #     Popping from an empty stack raises IndexError.
     #     """
     #     s = Stack()
     #     self.assertRaises(IndexError, s.pop)
 
     # def test_initial_peek(self):
     #     """
-    #     Popping from an empty stack raises IndexError
+    #     Peeking at an empty stack raises IndexError.
     #     """
     #     s = Stack()
     #     self.assertRaises(IndexError, s.peek)
