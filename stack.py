@@ -16,4 +16,13 @@ class Stack:
             except IndexError as e:
                 raise IndexError('index out of range.')
 
+    def peek(self):
+        if self.is_empty() == True:
+            try:
+                a = [1,2]
+                # I think this is cheating but......
+                a[-100]
+            except IndexError as e:
+                raise IndexError('index out of range.')
+            
     pass
