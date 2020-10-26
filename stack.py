@@ -21,6 +21,14 @@ class Stack:
             except IndexError as e:
                 raise IndexError('index out of range.')
 
+        popdata = None
+        for x in self.data:
+            popdata = x
+
+        self.data.remove(popdata)
+
+        return popdata
+
     def peek(self):
         if self.is_empty() == True:
             try:
