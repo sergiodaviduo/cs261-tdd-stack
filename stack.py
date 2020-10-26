@@ -4,8 +4,13 @@
 
 class Stack:
 
+    data = None
+
     def is_empty(self):
-        return True
+        if self.data == None:
+            return True
+        else:
+            return False
 
     def pop(self):
         if self.is_empty() == True:
@@ -24,5 +29,10 @@ class Stack:
                 a[-100]
             except IndexError as e:
                 raise IndexError('index out of range.')
-            
+
+    def push(self, val):
+        if self.data == None:
+            self.data = []
+        self.data.append(val)
+
     pass
