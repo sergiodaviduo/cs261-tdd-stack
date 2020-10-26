@@ -26,6 +26,8 @@ class Stack:
             popdata = x
 
         self.data.remove(popdata)
+        if self.data == []:
+            self.data = None
 
         return popdata
 
