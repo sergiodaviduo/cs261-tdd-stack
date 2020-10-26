@@ -29,6 +29,11 @@ class Stack:
                 a[-100]
             except IndexError as e:
                 raise IndexError('index out of range.')
+        peekdata = None
+        for x in self.data:
+            peekdata = x
+
+        return peekdata
 
     def push(self, val):
         if self.data == None:
